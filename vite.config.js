@@ -9,5 +9,5 @@ export default defineConfig({
   ],
   server: {    
   },
-  base: 'https://vsmyrnaios.github.io/to-do-app/'
+ base: '/to-do-app/'
 })
