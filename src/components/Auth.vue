@@ -59,8 +59,7 @@ const handleLogin = async () => {
   try {
     loading.value = true;
     const { error } = await supabase.auth.signInWithOtp({
-      email: email.value,
-      emailRedirectTo: 'https://vsmyrnaios.github.io/to-do-app/'
+      email: email.value
 
     });
     if (error) throw error;

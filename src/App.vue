@@ -126,21 +126,15 @@ function logout() {
   localStorage.removeItem("lastPage");
 }
 
-onMounted(async () => {
-  // 🧩 Αυτή είναι η κρίσιμη γραμμή
-  if (window.location.hash && window.location.hash.includes("access_token")) {
-    await supabase.auth.exchangeCodeForSession(window.location.hash);
-    window.location.hash = "";
-  }
-
+onMounted(() => {
   const savedPage = localStorage.getItem("lastPage");
 
-  const { data } = await supabase.auth.getSession();
-  session.value = data.session;
-
-  if (session.value) {
-    currentPage.value = savedPage || "account";
-  }
+  supabase.auth.getSession().then(({ data }) => {
+    session.value = data.session;
+    if (session.value) {
+      currentPage.value = "account";
+    }
+  });
 
   supabase.auth.onAuthStateChange((_, _session) => {
     session.value = _session;
