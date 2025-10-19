@@ -8,7 +8,7 @@ const { session } = toRefs(props);
 
 const router = useRouter();
 const loading = ref(true);
-document.title = "Gemmed Tasks|Login";
+document.title = "Gemmed Tasks";
 const email = ref(""); 
 const username = ref("");
 const website = ref("");
