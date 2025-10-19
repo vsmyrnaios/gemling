@@ -129,7 +129,7 @@ function logout() {
 onMounted(() => {
   const savedPage = localStorage.getItem("lastPage");
   const script = document.createElement("script");
-  document.title = "Gemmed Tasks|Dashboard
+  document.title = "Gemmed Tasks|Dashboard";
 
   supabase.auth.getSession().then(({ data }) => {
     session.value = data.session;
