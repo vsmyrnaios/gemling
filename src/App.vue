@@ -128,7 +128,6 @@ function logout() {
 
 onMounted(() => {
   const savedPage = localStorage.getItem("lastPage");
-  document.title = "Gemmed Tasks|Dashboard";
   const script = document.createElement("script");
 
   supabase.auth.getSession().then(({ data }) => {
