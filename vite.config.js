@@ -8,6 +8,5 @@ export default defineConfig({
   tailwindcss(),
   ],
   server: {    
-  },
- base: '/to-do-app/'
+  }
 })
