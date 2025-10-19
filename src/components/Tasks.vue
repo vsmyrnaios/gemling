@@ -183,11 +183,11 @@ onMounted(() => {
              border-radius: 10px;
              box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
              width: 250px;">
-      <p>Welcome to (appname)! Fill in your task's info and maximize your productivity. </p>
-      <p>Complete tasks to earn gems! Use your gems to unlock unique themes to customize your workspace!</p>
+      <p>Welcome to Gemmed Tasks! Fill in your task's info and maximize your productivity. </p>
+      <p>Complete tasks to earn gems. Use your gems to unlock unique themes to customize your workspace.</p>
       <p>Note that: 
-        <br>One completed task gives 10 gems</br>
-        <br>Each theme costs 50 gems</br>
+        <br>One completed task gives 10 gems.</br>
+        <br>Each theme costs 50 gems.</br>
       </p>
     </div>
     </div>
