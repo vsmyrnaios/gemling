@@ -127,6 +127,10 @@ function logout() {
 }
 
 onMounted(() => {
+  if (window.location.hash && window.location.hash.includes("access_token")) {
+    await supabase.auth.exchangeCodeForSession(window.location.hash);
+    window.location.hash = "";
+  }
   const savedPage = localStorage.getItem("lastPage");
 
   supabase.auth.getSession().then(({ data }) => {
