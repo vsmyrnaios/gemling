@@ -163,7 +163,7 @@ onMounted(() => {
 
 
 <template>
-<div style="position: relative; top: 20px; right: 100px; z-index: 1000;">
+<div style="position: absolute; top: 20px; right: 100px; z-index: 1000;">
 <button class="faq-button" @click="info = !info">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
       <path
