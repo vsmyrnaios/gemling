@@ -164,6 +164,7 @@ onMounted(() => {
 
 span{
   font-size: 40px;
+  z-index: -1000;
 }
 </style>
 
