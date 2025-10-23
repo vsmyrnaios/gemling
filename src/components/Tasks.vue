@@ -754,7 +754,7 @@ onMounted(() => {
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
     position: relative;
-    z-index: -1000;
+    z-index: 10000;
   }
   .faq-button svg {
     height: 1.5em;
@@ -802,6 +802,7 @@ onMounted(() => {
     transition-duration: 0.2s;
     pointer-events: none;
     letter-spacing: 0.5px;
+    z-index: 10000;
   }
 
   .tooltip::before {
