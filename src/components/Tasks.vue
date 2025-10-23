@@ -163,7 +163,7 @@ onMounted(() => {
 
 
 <template>
-<div style="position: absoloute; top: 20px; right: 100px;">
+<div style="position: fixed; top:5%; right: 5%; z-index:20000;">
 <button class="faq-button" @click="info = !info">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
       <path
@@ -176,7 +176,7 @@ onMounted(() => {
   <div
       v-show="info"
       class="info-container"
-      style="position: fixed; bottom: 20px; right: 20px; transform: translateX(-50%);
+      style="position: absolute; top: 60px; left: 50%; transform: translateX(-50%);
              background: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
              color: white;
              padding: 15px;
@@ -754,7 +754,6 @@ onMounted(() => {
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
     position: relative;
-    z-index: 10000;
   }
   .faq-button svg {
     height: 1.5em;
