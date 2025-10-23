@@ -98,7 +98,7 @@ const handleLogin = async () => {
       </div>
 
       <!-- Title -->
-      <h1 class="text-2xl font-semibold text-white">Welcome to the To Do List</h1>
+      <h1 class="text-2xl font-semibold text-white">Welcome to Gemmed Tasks</h1>
       <p class="text-gray-400 text-sm">Sign in via magic link with your email below</p>
 
       <!-- Input -->
