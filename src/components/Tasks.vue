@@ -163,7 +163,7 @@ onMounted(() => {
 
 
 <template>
-<div style="position: absolute; top: 20px; right: 100px; z-index: 1000;">
+<div style="position: fixed; top: 20px; right: 100px; z-index: 1000;">
 <button class="faq-button" @click="info = !info">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
       <path
@@ -174,7 +174,7 @@ onMounted(() => {
 
   <!-- Container με πληροφορίες -->
   <div
-      v-if="info"
+      v-show="info"
       class="info-container"
       style="position: absolute; top: 60px; left: 50%; transform: translateX(-50%);
              background: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
