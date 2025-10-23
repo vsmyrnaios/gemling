@@ -180,7 +180,7 @@ onMounted(() => {
              background: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
              color: white;
              padding: 15px;
-             z-index: -1000;
+             z-index: 10000;
              border-radius: 10px;
              box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
              width: 250px;">
