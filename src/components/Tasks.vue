@@ -176,7 +176,7 @@ onMounted(() => {
   <div
       v-show="info"
       class="info-container"
-      style="position: absolute; top: 60px; left: 60%; transform: translateX(-50%);
+      style="position: absolute; top: 60px; left: 50%; transform: translateX(-60%);
              background: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
              color: white;
              padding: 15px;
