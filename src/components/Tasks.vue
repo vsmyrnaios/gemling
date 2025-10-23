@@ -754,6 +754,7 @@ onMounted(() => {
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
     position: relative;
+    z-index: -1000;
   }
   .faq-button svg {
     height: 1.5em;
